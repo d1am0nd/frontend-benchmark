@@ -13,10 +13,10 @@
                   Source:
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Lumen</a> |
+                    <a target="_blank" href="https://github.com/d1am0nd/lumen-benchmark/blob/master/routes/web.php#L22">Lumen</a> |
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Golang</a>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark/blob/master/main.go#L57">Golang</a>
                 </li>
             </ul>
             <button class="button-primary" @click="fetchSingle()">Fetch 1 row</button>
@@ -27,10 +27,10 @@
                   Source:
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Lumen</a> |
+                    <a target="_blank" href="https://github.com/d1am0nd/lumen-benchmark/blob/master/routes/web.php#L26">Lumen</a> |
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Golang</a>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark/blob/master/main.go#L72">Golang</a>
                 </li>
             </ul>
             <button class="button-primary" @click="fetchMulti()">Fetch 5 rows</button>
@@ -41,10 +41,10 @@
                   Source:
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Lumen</a> |
+                    <a target="_blank" href="https://github.com/d1am0nd/lumen-benchmark/blob/master/routes/web.php#L30">Lumen</a> |
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Golang</a>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark/blob/master/main.go#L87">Golang</a>
                 </li>
             </ul>
             <button class="button-primary" @click="fetchStatic()">Fetch static</button>
@@ -55,7 +55,7 @@
             <h4>Lumen (PHP)</h4>
             <ul class="inline">
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Source</a>
+                    <a target="_blank" href="https://github.com/d1am0nd/lumen-benchmark">Source (full)</a>
                 </li>
             </ul>
             <ul class="inline">
@@ -71,7 +71,7 @@
             <h4>Golang</h4>
             <ul class="inline">
                 <li>
-                    <a target="_blank" href="https://github.com/d1am0nd/lumen-benchmark">Source</a>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark">Source (full)</a>
                 </li>
             </ul>
             <ul class="inline">
