@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
-const LUMEN_PREFIX = 'http://localhost:8000'
-const GOLANG_PREFIX =  'http://localhost:3000'
+const LUMEN_PREFIX = 'http://lumenapi.myprogramming.blog/'
+const GOLANG_PREFIX =  'http://goapi.myprogramming.blog/'
 
 const LUMEN_SINGLE_ROW_URL = LUMEN_PREFIX + '/api/first_db_result'
 const LUMEN_MULTI_ROW_URL = LUMEN_PREFIX + '/api/all_db_results'
