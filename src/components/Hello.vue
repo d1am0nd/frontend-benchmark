@@ -7,7 +7,7 @@
           Simple benchmark test that fetches same data from same database from same server from two different apis. One is written in <a target="_blank" href="https://lumen.laravel.com/">Lumen</a> (PHP) the other in <a target="_blank" href="https://golang.org/">Golang</a>.
         </p>
         <div class="row">
-          <div class="one-third column">
+          <div class="three columns">
             <ul class="inline">
                 <li>
                   Source:
@@ -21,7 +21,7 @@
             </ul>
             <button class="button-primary" @click="fetchSingle()">Fetch 1 row</button>
           </div>
-          <div class="one-third column">
+          <div class="three columns">
             <ul class="inline">
                 <li>
                   Source:
@@ -35,7 +35,7 @@
             </ul>
             <button class="button-primary" @click="fetchMulti()">Fetch 5 rows</button>
           </div>
-          <div class="one-third column">
+          <div class="three columns">
             <ul class="inline">
                 <li>
                   Source:
@@ -48,6 +48,20 @@
                 </li>
             </ul>
             <button class="button-primary" @click="fetchStatic()">Fetch static</button>
+          </div>
+          <div class="three columns">
+            <ul class="inline">
+                <li>
+                  Source:
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark/blob/master/main.go#L95">Lumen</a> |
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/d1am0nd/go-benchmark/blob/master/main.go#L95">Golang</a>
+                </li>
+            </ul>
+            <button class="button-primary" @click="fetchQsort()">Fetch qsort (5000)</button>
           </div>
         </div>
         <div class="row">
@@ -145,6 +159,21 @@ export default {
 
       var golangTimer = new Date().getTime()
       api.getGolangStatic()
+      .then((res) => {
+        this.golangTime = new Date().getTime() - golangTimer
+        this.data.golang = JSON.stringify(res.body, null, 2)
+      })
+    },
+    fetchQsort () {
+      var lumenTimer = new Date().getTime()
+      api.getLumenQsort()
+      .then((res) => {
+        this.lumenTime = new Date().getTime() - lumenTimer
+        this.data.lumen = JSON.stringify(res.body, null, 2)
+      })
+
+      var golangTimer = new Date().getTime()
+      api.getGolangQsort()
       .then((res) => {
         this.golangTime = new Date().getTime() - golangTimer
         this.data.golang = JSON.stringify(res.body, null, 2)
